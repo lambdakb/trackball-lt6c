@@ -1,0 +1,22 @@
+#!/bin/bash
+set -eo pipefail
+image=ghcr.io/inti-cmnb/kicad8_auto
+workdir=$(git rev-parse --show-toplevel)
+
+# Two optional arguments, first is the command to run, the second the image name
+cmd=$(basename "$0")
+if [ -n "$1" ]; then
+    cmd="$cmd $*"
+fi
+
+docker run --rm -it \
+    --user "$(id -u):$(id -g)" \
+    --env NO_AT_BRIDGE=1 \
+    --workdir="$(pwd)" \
+    --volume="/etc/group:/etc/group:ro" \
+    --volume="/etc/passwd:/etc/passwd:ro" \
+    --volume="/etc/shadow:/etc/shadow:ro" \
+    --volume="/etc/timezone:/etc/timezone:ro" \
+    --volume="${workdir}:${workdir}:rw" \
+    --volume="/home/${USER}/.config/kicad/8.0:/home/${USER}.linux/.config/kicad/8.0:ro" \
+    "${image}" /bin/bash -c "$cmd"

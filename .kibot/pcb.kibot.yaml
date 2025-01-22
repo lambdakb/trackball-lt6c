@@ -1,0 +1,10 @@
+kibot:
+  version: 1
+
+import:
+  - file: configs/jlcpcb.kibot.yaml
+    outputs: all
+    filters: all
+  - configs/pcbdraw.kibot.yaml
+  - configs/ibom.kibot.yaml
+  - configs/pdfsch.kibot.yaml

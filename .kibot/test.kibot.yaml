@@ -1,0 +1,18 @@
+# Run ERC & DRC checks
+kibot:
+  version: 1
+
+preflight:
+  erc:
+    enabled: true
+    dont_stop: true
+    dir: output/test
+    format: ["HTML"]
+  drc:
+    enabled: true
+    dont_stop: true
+    dir: output/test
+    format: ["HTML"]
+    ignore_unconnected: true
+  update_xml: false
+  check_zone_fills: true

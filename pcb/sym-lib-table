@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LKBD_OpticalSensor")(type "KiCad")(uri "${KIPRJMOD}/libraries/kicad-lkbd/symbols/LKBD_OpticalSensor.kicad_sym")(options "")(descr ""))
+  (lib (name "LKBD_MCU")(type "KiCad")(uri "${KIPRJMOD}/libraries/kicad-lkbd/symbols/LKBD_MCU.kicad_sym")(options "")(descr ""))
+)

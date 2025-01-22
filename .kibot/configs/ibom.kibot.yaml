@@ -1,0 +1,12 @@
+# Interactive HTML BOM
+kibot:
+  version: 1
+
+outputs:
+  - name: ibom
+    comment: Interactive HTML BOM
+    type: ibom
+    dir: output/fabrication/ibom
+    options:
+      dark_mode: true
+      name_format: "index"

@@ -1,0 +1,41 @@
+# Export PCB images
+kibot:
+  version: 1
+
+outputs:
+  - name: pcbdraw_png_top
+    comment: PCB 2D render in PNG format
+    type: pcbdraw
+    dir: output/img
+    options:
+      output: "%f-%i.%x"
+      style: set-black-enig
+      format: png
+      bottom: false
+  - name: pcbdraw_png_bottom
+    comment: PCB 2D render in PNG format
+    type: pcbdraw
+    dir: output/img
+    options:
+      output: "%f-%i.%x"
+      style: set-black-enig
+      format: png
+      bottom: true
+  - name: pcbdraw_svg_top
+    comment: PCB 2D render in SVG format
+    type: pcbdraw
+    dir: output/img
+    options:
+      output: "%f-%i.%x"
+      style: set-black-enig
+      format: svg
+      bottom: false
+  - name: pcbdraw_svg_bottom
+    comment: PCB 2D render in SVG format
+    type: pcbdraw
+    dir: output/img
+    options:
+      output: "%f-%i.%x"
+      style: set-black-enig
+      format: svg
+      bottom: true

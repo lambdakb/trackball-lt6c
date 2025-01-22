@@ -1,0 +1,12 @@
+# Export schematics as PDF
+kibot:
+  version: 1
+
+outputs:
+  - name: "schematics_pdf"
+    comment: "Print schematics PDF"
+    type: pdf_sch_print
+    dir: output/schematics
+    options:
+      color_theme: dracula
+      background_color: false
