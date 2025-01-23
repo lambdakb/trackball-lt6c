@@ -1,4 +1,4 @@
-NAME	:= LK6C
+NAME	:= LT6C
 GITROOT	:= $(shell git rev-parse --show-toplevel)
 KIBOT	:= $(GITROOT)/.kibot/bin/kibot
 
