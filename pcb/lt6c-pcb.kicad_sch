@@ -1746,15 +1746,15 @@
 		(uuid "e9d82c80-ba8e-4ca3-8543-c25b8da09eb9")
 	)
 	(no_connect
-		(at 155.575 21.59)
+		(at 151.13 19.05)
 		(uuid "403055b9-d8a7-4819-bd29-5caec6388595")
 	)
 	(no_connect
-		(at 155.575 29.21)
+		(at 151.13 26.67)
 		(uuid "71a73414-ee4d-4f96-9919-45098ed8569c")
 	)
 	(no_connect
-		(at 155.575 44.45)
+		(at 151.13 41.91)
 		(uuid "a2497a8f-9a3b-4899-93ca-b016f8f9173b")
 	)
 	(no_connect
@@ -1762,7 +1762,7 @@
 		(uuid "b4ce940d-e4f2-4c6d-a7c4-fa273e57c4ad")
 	)
 	(no_connect
-		(at 155.575 36.83)
+		(at 151.13 34.29)
 		(uuid "e28bbbca-63a4-43d7-b996-5189726c1586")
 	)
 	(wire
@@ -2376,7 +2376,7 @@
 		(uuid "ff0ba734-7691-4c4c-babc-944922b2e73d")
 	)
 	(rectangle
-		(start 151.13 46.99)
+		(start 147.955 46.99)
 		(end 177.8 50.165)
 		(stroke
 			(width 0)
@@ -2400,6 +2400,30 @@
 		(uuid 50f4f9af-c66e-45c2-897b-33038b40aca3)
 	)
 	(rectangle
+		(start 59.69 46.99)
+		(end 81.28 50.165)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5fac93db-9957-46a9-a43e-a0c141aebc18)
+	)
+	(rectangle
+		(start 77.47 102.87)
+		(end 99.06 106.045)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 77ad385d-4fe3-4ee7-830f-4855c372203f)
+	)
+	(rectangle
 		(start 100.33 51.435)
 		(end 177.8 106.045)
 		(stroke
@@ -2412,8 +2436,8 @@
 		(uuid 82c4344f-f4ce-48c7-9721-4f2a76ddcea3)
 	)
 	(rectangle
-		(start 59.944 46.99)
-		(end 81.28 50.165)
+		(start 156.21 102.87)
+		(end 177.8 106.045)
 		(stroke
 			(width 0)
 			(type default)
@@ -2421,11 +2445,11 @@
 		(fill
 			(type none)
 		)
-		(uuid 93821321-9dab-4dfa-aa59-09d552f4f346)
+		(uuid 940ba3f2-b8bc-4955-a9f4-56a5b3ca56f1)
 	)
 	(rectangle
 		(start 82.55 13.97)
-		(end 149.86 50.165)
+		(end 146.685 50.165)
 		(stroke
 			(width 0)
 			(type default)
@@ -2436,7 +2460,7 @@
 		(uuid 975c1f03-06f6-4fac-82fb-bce2392773ef)
 	)
 	(rectangle
-		(start 151.13 13.97)
+		(start 147.955 13.97)
 		(end 177.8 50.165)
 		(stroke
 			(width 0)
@@ -2448,8 +2472,8 @@
 		(uuid 9a1982e8-5f39-47c8-9583-35c8ece55219)
 	)
 	(rectangle
-		(start 161.925 102.87)
-		(end 177.8 106.045)
+		(start 125.095 46.99)
+		(end 146.685 50.165)
 		(stroke
 			(width 0)
 			(type default)
@@ -2457,31 +2481,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 9dbb865e-af46-4dd2-aa09-b4b5af65dd63)
-	)
-	(rectangle
-		(start 134.62 46.99)
-		(end 149.86 50.165)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid a608c9da-91a5-45fb-9b6f-0a7bf76df6d0)
-	)
-	(rectangle
-		(start 80.01 102.87)
-		(end 99.06 106.045)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid e628ab0d-5f4a-49a7-9f5d-6ee9574e8a22)
+		(uuid a09df0d2-faff-4bee-b426-43a8f3138648)
 	)
 	(rectangle
 		(start 13.97 13.97)
@@ -2497,7 +2497,7 @@
 	)
 	(text "PMW3360 LDO"
 		(exclude_from_sim no)
-		(at 142.24 48.895 0)
+		(at 135.89 48.895 0)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -2507,7 +2507,7 @@
 	)
 	(text "Mounting Holes"
 		(exclude_from_sim no)
-		(at 164.465 48.895 0)
+		(at 162.56 48.895 0)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -2517,7 +2517,7 @@
 	)
 	(text "PMW3360 Sensor"
 		(exclude_from_sim no)
-		(at 89.535 104.775 0)
+		(at 88.265 104.775 0)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -2537,7 +2537,7 @@
 	)
 	(text "Mouse Buttons"
 		(exclude_from_sim no)
-		(at 170.18 104.775 0)
+		(at 167.005 104.775 0)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -3172,7 +3172,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 155.575 19.05 0)
+		(at 153.67 19.05 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -3181,7 +3181,7 @@
 		(fields_autoplaced yes)
 		(uuid "3c0ba1dd-87e0-4b92-ba34-1456847c3b53")
 		(property "Reference" "H1"
-			(at 158.75 16.5099 0)
+			(at 158.115 17.7799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3189,8 +3189,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_M2"
-			(at 158.75 19.0499 0)
+		(property "Value" "MountingHole_Pad"
+			(at 158.115 20.3199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3199,7 +3199,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad"
-			(at 155.575 19.05 0)
+			(at 153.67 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3208,7 +3208,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 155.575 19.05 0)
+			(at 153.67 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3217,7 +3217,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 155.575 19.05 0)
+			(at 153.67 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3226,7 +3226,7 @@
 			)
 		)
 		(property "JLC" ""
-			(at 155.575 19.05 0)
+			(at 153.67 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3235,7 +3235,7 @@
 			)
 		)
 		(property "JLCPosOffset" ""
-			(at 155.575 19.05 0)
+			(at 153.67 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3244,7 +3244,7 @@
 			)
 		)
 		(property "JLCRotOffset" ""
-			(at 155.575 19.05 0)
+			(at 153.67 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3253,7 +3253,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 155.575 19.05 0)
+			(at 153.67 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4547,7 +4547,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 155.575 26.67 0)
+		(at 153.67 26.67 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4556,7 +4556,7 @@
 		(fields_autoplaced yes)
 		(uuid "b30fb48f-b946-4d4a-b854-72c0f7cae2e3")
 		(property "Reference" "H2"
-			(at 158.75 24.1299 0)
+			(at 158.115 25.3999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4564,8 +4564,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_M2"
-			(at 158.75 26.6699 0)
+		(property "Value" "MountingHole_Pad"
+			(at 158.115 27.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4574,7 +4574,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad"
-			(at 155.575 26.67 0)
+			(at 153.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4583,7 +4583,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 155.575 26.67 0)
+			(at 153.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4592,7 +4592,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 155.575 26.67 0)
+			(at 153.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4601,7 +4601,7 @@
 			)
 		)
 		(property "JLC" ""
-			(at 155.575 26.67 0)
+			(at 153.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4610,7 +4610,7 @@
 			)
 		)
 		(property "JLCPosOffset" ""
-			(at 155.575 26.67 0)
+			(at 153.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4619,7 +4619,7 @@
 			)
 		)
 		(property "JLCRotOffset" ""
-			(at 155.575 26.67 0)
+			(at 153.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4628,7 +4628,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 155.575 26.67 0)
+			(at 153.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4977,7 +4977,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 155.575 41.91 0)
+		(at 153.67 41.91 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4986,7 +4986,7 @@
 		(fields_autoplaced yes)
 		(uuid "c7b37977-08a3-4286-9013-91c1b188b2e1")
 		(property "Reference" "H4"
-			(at 158.75 39.3699 0)
+			(at 158.115 40.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4994,8 +4994,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_M2"
-			(at 158.75 41.9099 0)
+		(property "Value" "MountingHole_Pad"
+			(at 158.115 43.1799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5004,7 +5004,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad"
-			(at 155.575 41.91 0)
+			(at 153.67 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5013,7 +5013,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 155.575 41.91 0)
+			(at 153.67 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5022,7 +5022,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 155.575 41.91 0)
+			(at 153.67 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5031,7 +5031,7 @@
 			)
 		)
 		(property "JLC" ""
-			(at 155.575 41.91 0)
+			(at 153.67 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5040,7 +5040,7 @@
 			)
 		)
 		(property "JLCPosOffset" ""
-			(at 155.575 41.91 0)
+			(at 153.67 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5049,7 +5049,7 @@
 			)
 		)
 		(property "JLCRotOffset" ""
-			(at 155.575 41.91 0)
+			(at 153.67 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5058,7 +5058,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 155.575 41.91 0)
+			(at 153.67 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5251,7 +5251,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 155.575 34.29 0)
+		(at 153.67 34.29 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5260,7 +5260,7 @@
 		(fields_autoplaced yes)
 		(uuid "db0d5dd1-dc0b-4836-9b05-2702338f2988")
 		(property "Reference" "H3"
-			(at 158.75 31.7499 0)
+			(at 158.115 33.0199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5268,8 +5268,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_M2"
-			(at 158.75 34.2899 0)
+		(property "Value" "MountingHole_Pad"
+			(at 158.115 35.5599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5278,7 +5278,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad"
-			(at 155.575 34.29 0)
+			(at 153.67 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5287,7 +5287,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 155.575 34.29 0)
+			(at 153.67 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5296,7 +5296,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 155.575 34.29 0)
+			(at 153.67 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5305,7 +5305,7 @@
 			)
 		)
 		(property "JLC" ""
-			(at 155.575 34.29 0)
+			(at 153.67 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5314,7 +5314,7 @@
 			)
 		)
 		(property "JLCPosOffset" ""
-			(at 155.575 34.29 0)
+			(at 153.67 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5323,7 +5323,7 @@
 			)
 		)
 		(property "JLCRotOffset" ""
-			(at 155.575 34.29 0)
+			(at 153.67 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5332,7 +5332,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 155.575 34.29 0)
+			(at 153.67 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)

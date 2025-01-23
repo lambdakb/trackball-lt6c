@@ -2,5 +2,13 @@
 *.md    text eol=lf
 
 *.stl   filter=lfs diff=lfs merge=lfs -text
+*.wrl   filter=lfs diff=lfs merge=lfs -text
+*.stp   filter=lfs diff=lfs merge=lfs -text
 *.step  filter=lfs diff=lfs merge=lfs -text
-*.png   filter=lfs diff=lfs merge=lfs -text
+
+*.kicad_sch linguist-detectable=true linguist-language=KiCad-Schematic
+*.kicad_sym linguist-detectable=true linguist-language=KiCad-Schematic
+*.kicad_pcb linguist-detectable=true linguist-language=KiCad-Layout
+*.kicad_mod linguist-detectable=true linguist-language=KiCad-Layout
+*.kicad_wks linguist-detectable=true linguist-language=KiCad-Layout
+output/**   linguist-generated=true

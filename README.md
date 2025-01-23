@@ -28,6 +28,11 @@ Firmware has been built using the [`vial` fork](https://github.com/vial-kb/vial-
 
 ## License
 
-This design is released under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN-OHL-S-2.0)](https://opensource.org/license/cern-ohl-s), which allows you to use, share, and modify the design for any purpose, provided that you give appropriate credit, indicate any changes made, and distribute your contributions under the same license.
+This design is licensed under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN-OHL-S-2.0)](https://opensource.org/license/cern-ohl-s).
 
-If you’re a retailer or business interested in selling this design or related products, I’d love to chat about it! Feel free to reach out, and we can discuss how to make it work for you.
+You are free to use, share, and modify the design for any purpose, provided that:
+
+- **Attribution**: Appropriate credit is given, a link to the license is provided, and any changes are indicated.
+- **Reciprocity**: Any contributions or modifications must be distributed under the same license.
+
+If you are a retailer or business interested in selling this design or related products, I’d love to discuss it! Please feel free to reach out so we can explore potential arrangements.
