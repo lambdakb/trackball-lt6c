@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   role="img"
+   viewBox="0 0 23.952096 23.952096"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="opensourcehardware-4mm.svg"
+   width="4mm"
+   height="4mm"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="43.369216"
+     inkscape:cx="7.4130923"
+     inkscape:cy="6.098796"
+     inkscape:window-width="2544"
+     inkscape:window-height="1356"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1"
+     inkscape:document-units="mm"
+     showguides="true">
+    <sodipodi:guide
+       position="0.00047523182,11.976286"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <title
+     id="title1">Open Source Hardware</title>
+  <path
+     d="m 20.860778,11.621258 c 0.05315,0.0097 0.09731,0.06288 0.09731,0.117515 v 2.270209 a 0.1242515,0.1242515 0 0 1 -0.09731,0.117515 l -2.151946,0.400448 a 0.18188623,0.18188623 0 0 0 -0.127245,0.113025 l -0.672155,1.678145 a 0.18862275,0.18862275 0 0 0 0.01273,0.171406 l 1.222305,1.780689 a 0.125,0.125 0 0 1 -0.01498,0.152695 l -1.60479,1.604789 a 0.125,0.125 0 0 1 -0.151947,0.01422 l -1.750002,-1.200596 a 0.17215569,0.17215569 0 0 0 -0.167664,-0.006 l -0.77096,0.411677 a 0.09056886,0.09056886 0 0 1 -0.127244,-0.04641 l -1.590569,-3.843563 a 0.12050898,0.12050898 0 0 1 0.04641,-0.143712 l 0.193114,-0.118265 c 0.03592,-0.02246 0.08459,-0.05987 0.122006,-0.09356 a 2.510479,2.510479 0 1 0 -2.703593,0 c 0.03742,0.03444 0.08607,0.07186 0.122006,0.09356 l 0.193114,0.118265 a 0.11976048,0.11976048 0 0 1 0.04641,0.143712 L 9.39521,19.199834 A 0.09056886,0.09056886 0 0 1 9.2679645,19.24699 L 8.497008,18.835333 a 0.17215569,0.17215569 0 0 0 -0.1676647,0.0053 L 6.5793408,20.041917 A 0.12574851,0.12574851 0 0 1 6.4266462,20.027697 L 4.8211073,18.422906 a 0.125,0.125 0 0 1 -0.014221,-0.152694 l 1.2223055,-1.781438 a 0.18787425,0.18787425 0 0 0 0.012724,-0.170657 L 5.3705083,14.63997 A 0.18263474,0.18263474 0 0 0 5.243263,14.527694 L 3.0913169,14.125749 a 0.1242515,0.1242515 0 0 1 -0.097305,-0.117515 v -2.269461 c 0,-0.05463 0.044162,-0.107786 0.097305,-0.117515 l 2.2058383,-0.41018 A 0.18937126,0.18937126 0 0 0 5.4281433,11.098802 L 6.1040415,9.5209581 A 0.18413174,0.18413174 0 0 0 6.0935624,9.3510478 L 4.8083827,7.4775449 A 0.125,0.125 0 0 1 4.8226041,7.3255988 L 6.4273947,5.7193115 a 0.1242515,0.1242515 0 0 1 0.1526946,-0.014222 l 1.9056886,1.3091316 c 0.04491,0.030689 0.1220059,0.035928 0.1714072,0.011976 l 1.5291919,-0.625748 c 0.0524,-0.017216 0.102545,-0.07485 0.112275,-0.1294909 l 0.424402,-2.2806887 a 0.125,0.125 0 0 1 0.117515,-0.098054 h 2.270958 c 0.05464,0 0.107036,0.044162 0.117514,0.097305 l 0.424402,2.2814373 a 0.18712574,0.18712574 0 0 0 0.112275,0.1294909 l 1.529192,0.6257485 a 0.18862275,0.18862275 0 0 0 0.172155,-0.011976 L 17.372753,5.705838 a 0.1242515,0.1242515 0 0 1 0.151948,0.01497 l 1.60479,1.6047904 c 0.03893,0.038173 0.04491,0.1070359 0.01497,0.1519461 l -1.285928,1.8735029 a 0.18338324,0.18338324 0 0 0 -0.01047,0.1699103 l 0.675897,1.5778443 a 0.19161676,0.19161676 0 0 0 0.130989,0.112276 l 2.205089,0.41018"
+     id="path1"
+     style="stroke-width:0.748503" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Open Source Hardware</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.718564;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none"
+     id="rect1"
+     width="23.95162"
+     height="23.951618"
+     x="0.00047523182"
+     y="0" />
+</svg>
