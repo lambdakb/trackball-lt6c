@@ -20,8 +20,6 @@ You can preview the project files using [KiCanvas](https://kicanvas.org/?github=
 
 The exported schematic is also available under [`output/schematics`](output/schematics/).
 
-PCB has been designed using [KiCad EDA 8.0](https://www.kicad.org/).
-
 ## Firmware
 
 Firmware has been built using the [`vial` fork](https://github.com/vial-kb/vial-qmk) of [QMK](https://qmk.fm).
