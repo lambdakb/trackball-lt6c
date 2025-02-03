@@ -7,12 +7,14 @@
 
 ## PCB
 
-|    Front     |    Back     |
-| :----------: | :---------: |
-| ![PCB Front] | ![PCB Back] |
+|             Front             |            Back             |
+| :---------------------------: | :-------------------------: |
+| [![PCB Front]][PCB Front PNG] | [![PCB Back]][PCB Back PNG] |
 
 [PCB Front]: output/img/lt6c-pcb-top.svg
+[PCB Front PNG]: output/img/lt6c-pcb-top.png
 [PCB Back]: output/img/lt6c-pcb-bottom.svg
+[PCB Back PNG]: output/img/lt6c-pcb-bottom.png
 
 The PCB has been designed in [KiCad EDA 8.0](https://www.kicad.org/) using the [`kicad-lkbd`](https://github.com/lambdakb/kicad-lkbd) libraries and [`kbplacer`](https://github.com/adamws/kicad-kbplacer).
 
