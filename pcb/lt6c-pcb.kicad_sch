@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "LT6C")
-		(date "2025-01-21")
+		(date "2025-02-04")
 		(rev "v1.00")
 		(company "LambdaKB.dev")
 		(comment 1 "https://lambdakb.dev/devices/lt6c/")
