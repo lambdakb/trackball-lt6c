@@ -26,13 +26,21 @@ The exported schematic is also available under [`output/schematics`](output/sche
 
 Firmware has been built using the [`vial` fork](https://github.com/vial-kb/vial-qmk) of [QMK](https://qmk.fm).
 
+## Attribution
+
+This project is a complete reimplementation of the [Ploopy Adept trackball](https://ploopy.co/adept-trackball/) PCB using off-the-shelf components that are relatively easy to hand solder.
+
+The original concept and design were created by Ploopy, who have licensed it under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN-OHL-S-2.0)](https://github.com/ploopyco/adept-trackball/blob/master/LICENSE), which permits adaptations, as demonstrated in this project.
+
+The goal of this project is to allow individuals to build and assemble their own trackball at home at a lower cost, particularly in regions where purchasing the original kit is not cost-effective (e.g., shipping from the Ploopy store to Europe exceeds $50 CAD).
+
 ## License
 
 This design is licensed under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN-OHL-S-2.0)](https://opensource.org/license/cern-ohl-s).
 
-You are free to use, share, and modify the design for any purpose, provided that:
+You are free to use, modify, and distribute this design for any purpose, provided that:
 
-- **Attribution**: Appropriate credit is given, a link to the license is provided, and any changes are indicated.
-- **Reciprocity**: Any contributions or modifications must be distributed under the same license.
+- **Attribution**: Appropriate credit is given, a link to the license is provided, and any modifications are clearly indicated.
+- **Reciprocity**: Any derivative works must be released under the same license.
 
-If you are a retailer or business interested in selling this design or related products, I’d love to discuss it! Please feel free to reach out so we can explore potential arrangements.
+If you are a retailer or business interested in producing or selling this design or related products, I’d love to discuss it! Please feel free to reach out so we can explore potential arrangements.
