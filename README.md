@@ -62,6 +62,10 @@ The following JCLPCB specific options are used to serialize PCBs on order. An 8 
 
 Serial numbers are based on the current date using the `YYMM01` format for its incrementing numbers. Orders in February 2025 would start then start it at `250300`, making the final serial `LKBD_LT6C_v100_250300`.
 
+## Case
+
+Coming soon....
+
 ## BOM
 
 | Part                          | Ref.                                            | Quantity | Optional | Remarks                                                                              |
@@ -100,6 +104,8 @@ Firmware has been built using the [`vial` fork](https://github.com/vial-kb/vial-
 ## Attribution
 
 This project is a complete reimplementation of the [Ploopy Adept trackball](https://ploopy.co/adept-trackball/) PCB using off-the-shelf components that are relatively easy to hand solder.
+
+The provided [3D printed case](#case) is a modification of [the Adept's original case](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals) with a bit more space at the back to fit the new controller on the PCB. It has otherwise not be modified.
 
 The original concept and design were created by Ploopy, who have licensed it under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN-OHL-S-2.0)](https://github.com/ploopyco/adept-trackball/blob/master/LICENSE), which permits adaptations, as demonstrated in this project.
 
