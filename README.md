@@ -31,6 +31,7 @@ The exported schematic is also available under [`output/schematics`](output/sche
 | Case Screws                   | [M2 × 4 mm Low Profile Socket Head Screw (Hex)] |    4     |    ❌    | Low profile hex head screws are recommended, but any head type should work.          |
 | Roller Bearings               | [MR63ZZ 3 × 6 × 2.5 mm Bearing]                 |    3     |    ❌    | Sliding surface between the case and the trackball itself.                           |
 | Anti-Slip Feet                | Any                                             |    4     |    ✅    | Recommended for stability, any silicone or cork adhesive anti-slip feet should work. |
+| 44 mm Trackball               | Any [1.75" Snooker Ball]                        |    1     |    ❌    | The trackball ball itself, any 1.75" snooker / billiard ball should work.            |
 | XIAO RP2040 Controller        | [SeeedStudio XIAO RP2040]                       |    1     |    ❌    | Main controller for QMK/Vial.                                                        |
 | Micro Switches                | [D2LS-21 SMD Micro Switch]                      |    6     |    ❌    | Micro switches for mouse buttons.                                                    |
 | PMW3360 Optical Sensor & Lens | [PMW3360DM-T2QU + LM19-LSI]                     |    1     |    ❌    | Optical mouse sensor and lens used to detect trackball movement.                     |
@@ -44,6 +45,7 @@ The exported schematic is also available under [`output/schematics`](output/sche
 [Adept Trackball case]: https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals
 [M2 × 4 mm Low Profile Socket Head Screw (Hex)]: https://www.aliexpress.com/item/4001072025844.html
 [MR63ZZ 3 × 6 × 2.5 mm Bearing]: https://www.aliexpress.com/item/1005001864936060.html
+[1.75" Snooker Ball]: https://amzn.eu/d/hGChcvq
 [SeeedStudio XIAO RP2040]: https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html
 [D2LS-21 SMD Micro Switch]: https://www.aliexpress.com/item/1005003435671261.html
 [PMW3360DM-T2QU + LM19-LSI]: https://www.aliexpress.com/item/4000904265601.html?
