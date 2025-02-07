@@ -22,12 +22,52 @@ You can preview the project files using [KiCanvas](https://kicanvas.org/?github=
 
 The exported schematic is also available under [`output/schematics`](output/schematics/).
 
+### PCB Order
+
+| Parameters                       | Value                  |
+| -------------------------------- | ---------------------- |
+| Base Material                    | FR4                    |
+| Layers                           | 2                      |
+| Dimensions                       | 62 × 64.4 mm           |
+| PCB Thickness                    | 0.8 mm                 |
+| PCB Color [^pcb-color]           | Green                  |
+| Silkscreen                       | White                  |
+| Surface Finish [^surface-finish] | Lead Free HASL or ENIG |
+| Copper Weight                    | 1 oz                   |
+| Via Covering                     | Tented                 |
+| Min Via Hole Size                | 0.3 mm                 |
+| Board Outline Tolerance          | ± 0.2 mm               |
+
+[^pcb-color]: You can select any PCB color you want but manufacturers such as JLCPCB will charge you more for it as the combo 0.8 mm thickness, Lead Free HASL surface finish and alternative board color is pretty uncommon for them to produce.
+[^surface-finish]: The "HASL (with lead)" option is extremely discouraged due to the risk of lead poisoning. We strongly recommend paying the premium for the "Lead Free HASL" option.
+
+### JLCPCB Specific Options
+
+<!-- NOTE: This is generic and used for ALL LambdaKB PCBs EXCEPT for cases PCB   -->
+
+#### Mark on PCB
+
+The following JCLPCB specific options are used to serialize PCBs on order. An 8 × 8 mm silkscreen square was added to the PCB to allow for a 2D barcode to be added.
+
+| Parameters            | Value                       |
+| --------------------- | --------------------------- |
+| Mark on PCB           | 2D barcode (Serial Number)  |
+| - Printing            | 2D barcode & Number         |
+| - Code Type           | Data Matrix Code            |
+| - Prefix              | `LKBD_LT6C_v100`            |
+| - Unique Number       | Remove                      |
+| - Incrementing Number | _`YYMM01`_ (e.g.: `250300`) |
+| - 2D Barcode Size     | 8 × 8 mm                    |
+| - 2D Barcode Position | Specify Position            |
+
+Serial numbers are based on the current date using the `YYMM01` format for its incrementing numbers. Orders in February 2025 would start then start it at `250300`, making the final serial `LKBD_LT6C_v100_250300`.
+
 ## BOM
 
 | Part                          | Ref.                                            | Quantity | Optional | Remarks                                                                              |
 | ----------------------------- | ----------------------------------------------- | :------: | :------: | ------------------------------------------------------------------------------------ |
 | PCB                           | [LT6C PCB](README.md#pcb)                       |    1     |    ❌    | See [PCB](README.md#pcb) section on how to order it.                                 |
-| 3D Printed Case               | [LT6C Case](README#case)                        |    1     |    ❌    | 3D Printed case adapted from the [Adept Trackball case].                             |
+| 3D Printed Case               | [LT6C Case](README.md#case)                     |    1     |    ❌    | 3D Printed case adapted from the [Adept Trackball case].                             |
 | Case Screws                   | [M2 × 4 mm Low Profile Socket Head Screw (Hex)] |    4     |    ❌    | Low profile hex head screws are recommended, but any head type should work.          |
 | Roller Bearings               | [MR63ZZ 3 × 6 × 2.5 mm Bearing]                 |    3     |    ❌    | Sliding surface between the case and the trackball itself.                           |
 | Anti-Slip Feet                | Any                                             |    4     |    ✅    | Recommended for stability, any silicone or cork adhesive anti-slip feet should work. |
