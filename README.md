@@ -66,8 +66,8 @@ Serial numbers are based on the current date using the `YYMM01` format for its i
 
 | Part                          | Ref.                                            | Quantity | Optional | Remarks                                                                              |
 | ----------------------------- | ----------------------------------------------- | :------: | :------: | ------------------------------------------------------------------------------------ |
-| PCB                           | [LT6C PCB](README.md#pcb)                       |    1     |    ❌    | See [PCB](README.md#pcb) section on how to order it.                                 |
-| 3D Printed Case               | [LT6C Case](README.md#case)                     |    1     |    ❌    | 3D Printed case adapted from the [Adept Trackball case].                             |
+| PCB                           | [LT6C PCB](./README.md#pcb)                     |    1     |    ❌    | See [PCB](./README.md#pcb) section on how to order it.                               |
+| 3D Printed Case               | [LT6C Case](./README.md#case)                   |    1     |    ❌    | 3D Printed case adapted from the [Adept Trackball case].                             |
 | Case Screws                   | [M2 × 4 mm Low Profile Socket Head Screw (Hex)] |    4     |    ❌    | Low profile hex head screws are recommended, but any head type should work.          |
 | Roller Bearings               | [MR63ZZ 3 × 6 × 2.5 mm Bearing]                 |    3     |    ❌    | Sliding surface between the case and the trackball itself.                           |
 | Anti-Slip Feet                | Any                                             |    4     |    ✅    | Recommended for stability, any silicone or cork adhesive anti-slip feet should work. |
