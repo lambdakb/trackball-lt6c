@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/badge/License-CERN--OHL--S--2.0-0099B0?style=for-the-badge&logo=opensourcehardware&logoColor=white)](/LICENSE)
 [![KiCad](https://img.shields.io/badge/KiCad-v8-orange?style=for-the-badge&logo=kicad&logoColor=white&logoSize=auto)](https://www.kicad.org/)
 
+The LambdaKB LT6C is a re-creation of the [Ploopy Adept](https://ploopy.co/adept-trackball/) PCB and case as an easy to build DIY kit. The main goal was to build it using only off-the-shelf part and components that can be hand soldered relatively easily.
+
+We set out to create a more affordable alternative to the original Adept trackball while retaining all its features, primarily for individuals in regions where purchasing the original kit isn't cost-effective (for example, shipping from the Ploopy store to Europe costs over €35 before import taxes).
+
 ## PCB
 
 |             Front             |            Back             |
@@ -62,6 +66,21 @@ The following JCLPCB specific options are used to serialize PCBs on order. An 8 
 
 Serial numbers are based on the current date using the `YYMM01` format for its incrementing numbers. Orders in February 2025 would start then start it at `250300`, making the final serial `LKBD_LT6C_v100_250300`.
 
+## Case
+
+|     3D Render     |     Part Orientation     |
+| :---------------: | :----------------------: |
+| ![Case 3D Render] | ![Case Part Orientation] |
+
+[Case 3D Render]: assets/case-preview.png
+[Case Part Orientation]: assets/case-part-orientation.png
+
+A 3D printed case is also available under [`case`](case/), this is a simple modification of the original [Ploopy Adept's case](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals) that adds clearance for the back of our PCB. No other major modification has been done it.
+
+Please use the included [`3mf` file](case/lt6c-case.3mf) to print it and refer to the original [printing instructions](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals#how-can-i-use-the-included-3mf-file) for your printing parameters.
+
+Individual STL files, STEP file, and Fusion 360 project archive are also available if you wish to modify it. Please make sure to respect the original [license](./README.md#license) when doing so.
+
 ## BOM
 
 | Part                          | Ref.                                            | Quantity | Optional | Remarks                                                                              |
@@ -101,9 +120,9 @@ Firmware has been built using the [`vial` fork](https://github.com/vial-kb/vial-
 
 This project is a complete reimplementation of the [Ploopy Adept trackball](https://ploopy.co/adept-trackball/) PCB using off-the-shelf components that are relatively easy to hand solder.
 
-The original concept and design were created by Ploopy, who have licensed it under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN-OHL-S-2.0)](https://github.com/ploopyco/adept-trackball/blob/master/LICENSE), which permits adaptations, as demonstrated in this project.
+The provided [3D printed case](#case) is a modification of [the Adept's original case](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals) with a bit more space at the back to fit the new controller on the PCB. It has otherwise not be modified.
 
-The goal of this project is to allow individuals to build and assemble their own trackball at home at a lower cost, particularly in regions where purchasing the original kit is not cost-effective (e.g., shipping from the Ploopy store to Europe exceeds $50 CAD).
+The original concept and design were created by Ploopy, who have licensed it under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN-OHL-S-2.0)](https://github.com/ploopyco/adept-trackball/blob/master/LICENSE), which permits adaptations, as demonstrated in this project.
 
 ## License
 
