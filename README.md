@@ -75,9 +75,9 @@ Serial numbers are based on the current date using the `YYMM01` format for its i
 [Case 3D Render]: assets/case-preview.png
 [Case Part Orientation]: assets/case-part-orientation.png
 
-A 3D printed case is also available under [`case`](case/), this is a simple modification of the original [Ploopy Adept's case](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals) that adds clearance for the back of our PCB. No other major modification has been done it.
+A 3D printed case is also available under [`case`](case/), this is a simple modification of the original [Ploopy Adept's case](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals) that adds clearance for the back of our PCB. No other major modification has been done to it.
 
-Please use the included [`3mf` file](case/lt6c-case.3mf) to print it and refer to the original [printing instructions](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals#how-can-i-use-the-included-3mf-file) for your printing parameters.
+Please refer to the original [printing instructions](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals#how-can-i-use-the-included-3mf-file) and use the included [`3mf` file](case/lt6c-case.3mf) to print it.
 
 Individual STL files, STEP file, and Fusion 360 project archive are also available if you wish to modify it. Please make sure to respect the original [license](./README.md#license) when doing so.
 
