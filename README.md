@@ -45,35 +45,11 @@ The exported schematic is also available under [`output/schematics`](output/sche
 [^pcb-color]: You can select any PCB color you want but manufacturers such as JLCPCB will charge you more for it as the combo 0.8 mm thickness, Lead Free HASL surface finish and alternative board color is pretty uncommon for them to produce.
 [^surface-finish]: The "HASL (with lead)" option is extremely discouraged due to the risk of lead poisoning. We strongly recommend paying the premium for the "Lead Free HASL" option.
 
-### JLCPCB Specific Options
-
-<!-- NOTE: This is generic and used for ALL LambdaKB PCBs EXCEPT for cases PCB   -->
-
-#### Mark on PCB
-
-The following JCLPCB specific options are used to serialize PCBs on order. An 8 × 8 mm silkscreen square was added to the PCB to allow for a 2D barcode to be added.
-
-| Parameters            | Value                       |
-| --------------------- | --------------------------- |
-| Mark on PCB           | 2D barcode (Serial Number)  |
-| - Printing            | 2D barcode & Number         |
-| - Code Type           | Data Matrix Code            |
-| - Prefix              | `LKBD_LT6C_v100`            |
-| - Unique Number       | Remove                      |
-| - Incrementing Number | _`YYMM01`_ (e.g.: `250300`) |
-| - 2D Barcode Size     | 8 × 8 mm                    |
-| - 2D Barcode Position | Specify Position            |
-
-Serial numbers are based on the current date using the `YYMM01` format for its incrementing numbers. Orders in February 2025 would start then start it at `250300`, making the final serial `LKBD_LT6C_v100_250300`.
-
 ## Case
 
-|     3D Render     |     Part Orientation     |
-| :---------------: | :----------------------: |
-| ![Case 3D Render] | ![Case Part Orientation] |
-
-[Case 3D Render]: assets/case-preview.png
-[Case Part Orientation]: assets/case-part-orientation.png
+|                                                3D Render                                                 |
+| :------------------------------------------------------------------------------------------------------: |
+| <a href="assets/case-preview.png"><img src="assets/case-preview.png" width=400 alt="Case 3D Render"></a> |
 
 A 3D printed case is available under [`case`](case/), this is a simple modification of the original [Ploopy Adept's case](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals) that adds clearance for the back of our PCB. No other major modification has been done it.
 

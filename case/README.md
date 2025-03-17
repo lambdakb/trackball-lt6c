@@ -1,8 +1,9 @@
 # LT6C 3D Printed Case
 
-<p align="center">
-    <a href="../assets/case-preview.png"><img src="../assets/case-preview.png" width="480" alt="LT6C Case Preview" /></a>
-</p>
+|                                                3D Render                                                 |
+| :------------------------------------------------------------------------------------------------------: |
+| <a href="../assets/case-preview.png"><img src="../assets/case-preview.png" width=400 alt="Case 3D Render"></a> |
+
 
 This case is a simple modification of the original [Ploopy Adept's case](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals) that adds clearance for the back of our PCB. No other major modification has been done it.
 
