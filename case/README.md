@@ -1,44 +1,46 @@
 # LT6C 3D Printed Case
 
-|                                                3D Render                                                 |
-| :------------------------------------------------------------------------------------------------------: |
-| <a href="../assets/case-preview.png"><img src="../assets/case-preview.png" width=400 alt="Case 3D Render"></a> |
+## 3D Render
 
+|                                       |                                  |                                    |
+| :-----------------------------------: | :------------------------------: | :--------------------------------: |
+| ![Render](../assets/case-preview.png) |  ![Top](../assets/case-top.png)  | ![Front](../assets/case-front.png) |
+|   ![Back](../assets/case-back.png)    | ![Left](../assets/case-left.png) | ![Right](../assets/case-right.png) |
 
-This case is a simple modification of the original [Ploopy Adept's case](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals) that adds clearance for the back of our PCB. No other major modification has been done it.
+This case is a simple modification of the original [Ploopy Adept's case](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals) that adds clearance for the back of our PCB and some subtle branding. No other major modification has been done it.
 
 ## BOM
 
-| Part                  | Ref.                                            | Quantity | Remarks                                                                              |
-| --------------------- | ----------------------------------------------- | :------: | ------------------------------------------------------------------------------------ |
-| Top Case              | [STL File](./lt6c-case-top.stl)                 |    1     | Remixed [Ploopy Adept] Top Case for the LT6C PCB.                                      |
-| Bottomm Case          | [STL File](./lt6c-case-bottom.stl)              |    1     | Remixed [Ploopy Adept] Bottom Case for the LT6C PCB.                                   |
-| Sensor Shroud         | [STL File](./lt6c-case-sensor-shroud.stl)       |    1     | Original [Ploopy Adept] Sensor Shroud.                                                |
-| Bearing Press         | [STEP File][Ploopy Bit Bearing Press]           |    1     | Bearing Press from the [Ploopy Classic Trackball].                                     |
-| Roller Bearing Dowels | [STEP File][Ploopy Rollber Bearing Dowel]       |    1     | Roller bearing dowels from the [Ploopy Classic Trackball].                             |
-| Case Screws           | [M2 × 4 mm Low Profile Socket Head Screw (Hex)] |    4     | Low profile hex head screws are recommended, but any head type should work.          |
-| Roller Bearings       | [MR63ZZ 3 × 6 × 2.5 mm Bearing]                 |    3     | Sliding surface between the case and the trackball itself.                           |
-| Anti-Slip Feet        | Any                                             |    4     | Recommended for stability, any silicone or cork adhesive anti-slip feet should work. |
+| Part                  | Ref.                                      | Quantity | Remarks                                                                                                |
+| --------------------- | ----------------------------------------- | :------: | ------------------------------------------------------------------------------------------------------ |
+| Top Case              | [STL File](./lt6c-case-top.stl)           |    1     | Remixed [Ploopy Adept] Top Case for the LT6C PCB.                                                      |
+| Bottomm Case          | [STL File](./lt6c-case-bottom.stl)        |    1     | Remixed [Ploopy Adept] Bottom Case for the LT6C PCB.                                                   |
+| Sensor Shroud         | [STL File](./lt6c-case-sensor-shroud.stl) |    1     | Original [Ploopy Adept] Sensor Shroud.                                                                 |
+| Bearing Press         | [STEP File][Ploopy Bit Bearing Press]     |    1     | Bearing Press from the [Ploopy Classic Trackball].                                                     |
+| Roller Bearing Dowels | [STEP File][Ploopy Rollber Bearing Dowel] |    1     | Roller bearing dowels from the [Ploopy Classic Trackball].                                             |
+| Case Screws           | [M2 × 6 mm Socket Head Screw (Hex)]       |    4     | Any M2 hex screw show work from 4 mm to 10 mm in length with a head no bigger than 4.5 mm in diameter. |
+| Roller Bearings       | [MR63ZZ 3 × 6 × 2.5 mm Bearing]           |    3     | Sliding surface between the case and the trackball itself.                                             |
+| Anti-Slip Feet        | Any                                       |    4     | Recommended for stability, any silicone or cork adhesive anti-slip feet should work.                   |
 
 [Ploopy Adept]: https://github.com/ploopyco/adept-trackball/
 [Ploopy Classic Trackball]: https://github.com/ploopyco/classic-trackball/
-[M2 × 4 mm Low Profile Socket Head Screw (Hex)]: https://www.aliexpress.com/item/4001072025844.html
+[M2 × 6 mm Socket Head Screw (Hex)]: https://www.aliexpress.com/item/4001072025844.html
 [MR63ZZ 3 × 6 × 2.5 mm Bearing]: https://www.aliexpress.com/item/1005001864936060.html
 [Ploopy Bit Bearing Press]: https://github.com/ploopyco/classic-trackball/blob/master/hardware/Mechanicals/STEPs/Bit%20Bearing%20Press%20Complete.step
 [Ploopy Rollber Bearing Dowel]: https://github.com/ploopyco/classic-trackball/blob/master/hardware/Mechanicals/STEPs/RollerBearingDowel.stp
 
 ## Print Profile
 
-The included `lt6c-case.3mf` file has been built using Orca Slicer for the Bambu Lab A1 printer with the following settings:
+The included [`lt6c-case.3mf`](./lt6c-case.3mf) file has been built using Orca Slicer for the Bambu Lab A1 printer with the following settings:
 
 - **Nozzle diameter**: 0.4 mm
 - **Layer height**: 0.2 mm
-- **Infill**: 15%
 - **Wall Loops**: 2
 - **Top Shell Layers**: 5
 - **Bottom Shell Layers**: 4
-- **Infill Pattern**: Gyroid
 - **Bottom / Top Surface Pattern**: Rectilinear
+- **Infill**: 15%
+- **Infill Pattern**: Gyroid
 - **Infill Overlap**: 25%
 - **Seam Position**: Nearest
 - **Wall Generator**: Arachne
@@ -55,3 +57,14 @@ Please follow the following print orientation for the best results:
 Once you have your [PCB](/README.md#pcb) ready and your parts printed, you can start assembling the case. You should be able to follow the [Ploopy Adept Assembly Guide](https://github.com/ploopyco/adept-trackball/wiki/Ploopy-Adept-Trackball-Kit-Assembly#step-6-attach-the-optic-to-the-pmw-3360) starting from step 6.
 
 A complete build guide of the LT6C is also available at [LambdaKB.dev](https://lambdakb.dev/devices/lt6c/build).
+
+## BTU Mod
+
+A modified version of the top part of the case that accepts 7.5 mm ball transfer unit (build around the [MJ310 BTU](https://www.aliexpress.com/item/1005005334424631.html)) is also available ([STL File][BTU STL File], [STEP File][BTU STEP File]).
+
+<a href="../assets/case-btu-mod.png"><img src="../assets/case-btu-mod.png" width=400 alt="Case 3D Render"></a>
+
+It requires some tree supports when printing, mainly inside the BTU sockets. These have already been setup on the `Top (BTU Mod)` plate in the [`lt6c-case.3mf`](./lt6c-case.3mf) file.
+
+[BTU STL File]: ./stl/lt6c-case-top-btu-mod.stl
+[BTU STEP File]: ./step/LT6C%20Case%20v20%20(BTU%20Mod).step
