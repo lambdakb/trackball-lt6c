@@ -60,11 +60,13 @@ A complete build guide of the LT6C is also available at [LambdaKB.dev](https://l
 
 ## BTU Mod
 
-A modified version of the top part of the case that accepts 7.5 mm ball transfer unit (build around the [MJ310 BTU](https://www.aliexpress.com/item/1005005334424631.html)) is also available ([STL File][BTU STL File], [STEP File][BTU STEP File]).
+A modified version of the top part of the case that accepts 7.5 mm ball transfer unit (built around [MJ310 BTUs](https://www.aliexpress.com/item/1005005334424631.html)) is also available.
 
 <a href="../assets/case-btu-mod.png"><img src="../assets/case-btu-mod.png" width=400 alt="Case 3D Render"></a>
 
-It requires some tree supports when printing, mainly inside the BTU sockets. These have already been setup on the `Top (BTU Mod)` plate in the [`lt6c-case.3mf`](./lt6c-case.3mf) file.
+You can download their specific files here: [STL][BTU STL File] & [STEP][BTU STEP File].
+
+In order to print this mod properly, you will need to enable Tree Supports by adding support enforcers inside the BTU sockets. These have already been configured in the `Top (BTU Mod)` plate of the [`lt6c-case.3mf`](./lt6c-case.3mf) project file.
 
 [BTU STL File]: ./stl/lt6c-case-top-btu-mod.stl
 [BTU STEP File]: ./step/LT6C%20Case%20v20%20(BTU%20Mod).step
