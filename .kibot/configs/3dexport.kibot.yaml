@@ -1,0 +1,18 @@
+# Export schematics as PDF
+kibot:
+  version: 1
+
+outputs:
+  - name: "3d_step"
+    comment: "Export PCB 3D model"
+    type: export_3d
+    dir: step
+    run_by_default: false
+    options:
+      origin: grid
+      output: '%f-%i%I%v.%x'
+      format: step
+      download: true
+      download_lcsc: true
+      units: 'millimeters'
+      subst_models: true

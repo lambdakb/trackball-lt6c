@@ -3,7 +3,7 @@
 [![Documentation](https://img.shields.io/badge/Documentation-Latest-brightgreen?style=for-the-badge&logo=docusaurus&logoColor=white)](https://lambdakb.dev/devices/lt6c)
 [![GitHub Release](https://img.shields.io/github/v/release/lambdakb/trackball-lt6c?label=Release&style=for-the-badge&logo=github&logoColor=white)](https://github.com/lambdakb/trackball-lt6c/releases/latest)
 [![License](https://img.shields.io/badge/License-CERN--OHL--S--2.0-0099B0?style=for-the-badge&logo=opensourcehardware&logoColor=white)](/LICENSE)
-[![KiCad](https://img.shields.io/badge/KiCad-v8-orange?style=for-the-badge&logo=kicad&logoColor=white&logoSize=auto)](https://www.kicad.org/)
+[![KiCad](https://img.shields.io/badge/KiCad-v9-orange?style=for-the-badge&logo=kicad&logoColor=white&logoSize=auto)](https://www.kicad.org/)
 
 The LambdaKB LT6C is a re-creation of the [Ploopy Adept](https://ploopy.co/adept-trackball/) PCB and case as an easy to build DIY kit. The main goal was to build it using only off-the-shelf part and components that can be hand soldered relatively easily.
 

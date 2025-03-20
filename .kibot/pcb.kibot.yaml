@@ -1,10 +1,17 @@
+# PCB exports
 kibot:
   version: 1
+
+global:
+  out_dir: output/
 
 import:
   - file: configs/jlcpcb.kibot.yaml
     outputs: all
     filters: all
-  - configs/pcbdraw.kibot.yaml
-  - configs/ibom.kibot.yaml
-  - configs/pdfsch.kibot.yaml
+  - file: configs/pcbdraw.kibot.yaml
+    definitions:
+      PCBDRAW_STYLE: jlcpcb-green-enig
+  - file: configs/ibom.kibot.yaml
+  - file: configs/pdfsch.kibot.yaml
+  - file: configs/3dexport.kibot.yaml
