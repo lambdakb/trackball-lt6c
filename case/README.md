@@ -21,14 +21,14 @@ No other major modification has been done it.
 | Bearing Press         | [STEP File][Ploopy Bit Bearing Press]                |    1     | Bearing Press from the [Ploopy Classic Trackball].                                                     |
 | Roller Bearing Dowels | [STEP File][Ploopy Rollber Bearing Dowel]            |    1     | Roller bearing dowels from the [Ploopy Classic Trackball].                                             |
 | Case Screws           | [M2 × 6 mm Socket Head Screw (Hex)]                  |    4     | Any M2 hex screw show work from 4 mm to 10 mm in length with a head no bigger than 4.5 mm in diameter. |
-| M2 Heatset Inserts    | [CNCKitchen M2 × 3 Insert] or [Ruthex M2 × 4 Insert] |    4     | Any M2 heatset inserts with an outside insertion diameter of 3.1 mm.                                   |
+| M2 Heatset Inserts    | [CNC Kitchen M2 × 3 Insert] or [Ruthex M2 × 4 Insert] |    4     | Any M2 heatset inserts with an outside insertion diameter of 3.1 mm.                                   |
 | Roller Bearings       | [MR63ZZ 3 × 6 × 2.5 mm Bearing]                      |    3     | Sliding surface between the case and the trackball itself.                                             |
 | Anti-Slip Feet        | Any                                                  |    4     | Recommended for stability, any silicone or cork adhesive anti-slip feet should work.                   |
 
 [Ploopy Adept]: https://github.com/ploopyco/adept-trackball/
 [Ploopy Classic Trackball]: https://github.com/ploopyco/classic-trackball/
 [M2 × 6 mm Socket Head Screw (Hex)]: https://www.aliexpress.com/item/4001072025844.html
-[CNCKitchen M2 × 3 Insert]: https://cnckitchen.store/products/heat-set-insert-m2-x-3-100-pieces
+[CNC Kitchen M2 × 3 Insert]: https://cnckitchen.store/products/heat-set-insert-m2-x-3-100-pieces
 [Ruthex M2 × 4 Insert]: https://www.ruthex.de/fr/products/ruthex-gewindeeinsatz-m2-70-stuck-rx-m2x4-messing-gewindebuchsen
 [MR63ZZ 3 × 6 × 2.5 mm Bearing]: https://www.aliexpress.com/item/1005001864936060.html
 [Ploopy Bit Bearing Press]: https://github.com/ploopyco/classic-trackball/blob/master/hardware/Mechanicals/STEPs/Bit%20Bearing%20Press%20Complete.step
