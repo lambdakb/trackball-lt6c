@@ -1,4 +1,7 @@
 # JLCPCB Fabrication Files
+# Reference: https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-8
+# Reference: https://github.com/INTI-CMNB/KiBot/blob/ff2c6ff9bd64d3941268876bdf301001cc8290bd/kibot/resources/config_templates/JLCPCB.kibot.yaml
+
 kibot:
   version: 1
 
@@ -14,10 +17,9 @@ outputs:
   - name: jlcpcb_gbr
     comment: Gerbers compatible with JLCPCB
     type: gerber
-    dir: output/fabrication/jlcpcb/gerbers
+    dir: fabrication/jlcpcb/gerbers
     options:
       exclude_edge_layer: true
-      exclude_pads_from_silkscreen: true
       plot_sheet_reference: false
       plot_footprint_refs: true
       plot_footprint_values: false
@@ -29,11 +31,8 @@ outputs:
       gerber_precision: 4.6
       use_gerber_x2_attributes: false
       use_gerber_net_attributes: false
-      line_width: 0.1
-      subtract_mask_from_silk: true
+      subtract_mask_from_silk: true # Ensure no silkscreen on pads
     layers:
-      # Note: a more generic approach is to use 'copper' but then the filenames
-      # are slightly different.
       - F.Cu
       - B.Cu
       - F.Paste
@@ -47,30 +46,48 @@ outputs:
   - name: jlcpcb_drl
     comment: Drill files compatible with JLCPCB
     type: excellon
-    dir: output/fabrication/jlcpcb/gerbers
+    dir: fabrication/jlcpcb/gerbers
     options:
       pth_and_npth_single_file: false
       pth_id: "-PTH"
       npth_id: "-NPTH"
-      metric_units: false
+      metric_units: true
+      route_mode_for_oval_holes: false
       output: "%f%i.%x"
+
+  # This creates a single drill map gerber layer for PTH and NPTH holes instead of two
+  - name: jlcpcb_drl_map
+    comment: Drill files compatible with JLCPCB
+    type: excellon
+    dir: fabrication/jlcpcb/gerbers
+    options:
+      generate_drill_files: false
+      pth_and_npth_single_file: true
+      map:
+        output: '%f-%i%I%v.%x'
+        type: gerber
+      route_mode_for_oval_holes: false
+      output: "%f-%i.%x"
 
   - name: jlcpcb_zip
     comment: ZIP file for JLCPCB
     type: compress
-    dir: output/fabrication/jlcpcb
+    dir: fabrication/jlcpcb
     options:
+      move_files: true
       output: "%f_gerber_jlcpcb.%x"
       files:
         - from_output: jlcpcb_gbr
           dest: /
         - from_output: jlcpcb_drl
           dest: /
+        - from_output: jlcpcb_drl_map
+          dest: /
 
   - name: jlcpcb_cpl
     comment: "Pick and place file, JLCPCB style"
     type: position
-    dir: output/fabrication/jlcpcb
+    dir: fabrication/jlcpcb
     options:
       pre_transform: _rot_footprint_jlcpcb
       output: "%f_cpl_jlcpcb.%x"
@@ -95,7 +112,7 @@ outputs:
   - name: jlcpcb_bom
     comment: "BOM for JLCPCB"
     type: bom
-    dir: output/fabrication/jlcpcb
+    dir: fabrication/jlcpcb
     options:
       output: "%f_%i_jlcpcb.%x"
       exclude_filter: "only_jlc_parts"
@@ -107,12 +124,10 @@ outputs:
           name: Designator
         - Footprint Type
         - Footprint
-        - field: LCSC
-          name: "LCSC"
-        - field: "JLC"
-          name: "JLC"
+        - LCSC
+        - JLC
         - field: "Quantity Per PCB"
-          name: "QTY"
+          name: QTY
       csv:
         hide_pcb_info: true
         hide_stats_info: true

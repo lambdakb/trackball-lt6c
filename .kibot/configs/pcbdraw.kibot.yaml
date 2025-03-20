@@ -6,36 +6,40 @@ outputs:
   - name: pcbdraw_png_top
     comment: PCB 2D render in PNG format
     type: pcbdraw
-    dir: output/img
+    dir: img
     options:
       output: "%f-%i.%x"
-      style: jlcpcb-green-enig
+      style: '@PCBDRAW_STYLE@'
       format: png
       bottom: false
   - name: pcbdraw_png_bottom
     comment: PCB 2D render in PNG format
     type: pcbdraw
-    dir: output/img
+    dir: img
     options:
       output: "%f-%i.%x"
-      style: jlcpcb-green-enig
+      style: '@PCBDRAW_STYLE@'
       format: png
       bottom: true
   - name: pcbdraw_svg_top
     comment: PCB 2D render in SVG format
     type: pcbdraw
-    dir: output/img
+    dir: img
     options:
       output: "%f-%i.%x"
-      style: jlcpcb-green-enig
+      style: '@PCBDRAW_STYLE@'
       format: svg
       bottom: false
   - name: pcbdraw_svg_bottom
     comment: PCB 2D render in SVG format
     type: pcbdraw
-    dir: output/img
+    dir: img
     options:
       output: "%f-%i.%x"
-      style: jlcpcb-green-enig
+      style: '@PCBDRAW_STYLE@'
       format: svg
       bottom: true
+
+...
+definitions:
+  PCBDRAW_STYLE: set-black-enig

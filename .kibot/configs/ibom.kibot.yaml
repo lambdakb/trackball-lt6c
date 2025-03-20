@@ -6,7 +6,7 @@ outputs:
   - name: ibom
     comment: Interactive HTML BOM
     type: ibom
-    dir: output/fabrication/ibom
+    dir: fabrication/ibom
     options:
       dark_mode: true
       name_format: "index"
