@@ -36,8 +36,11 @@ No other major modification has been done it.
 
 ## Print Profile
 
-The included [`lt6c-case.3mf`](./lt6c-case.3mf) file has been built using Orca Slicer for the Bambu Lab A1 printer with the following settings:
+The included [`lt6c-case.3mf`](./lt6c-case.3mf) file has been built using [**Orca Slicer**](https://github.com/SoftFever/OrcaSlicer) for the Bambu Lab A1 printer. I would highly recommend using it if you can and if your printer is supported.
 
+Otherwise, you can use the following settings:
+
+- **Recommended Filament**: PLA
 - **Nozzle diameter**: 0.4 mm
 - **Layer height**: 0.2 mm
 - **Wall Loops**: 2
@@ -50,8 +53,8 @@ The included [`lt6c-case.3mf`](./lt6c-case.3mf) file has been built using Orca S
 - **Seam Position**: Nearest
 - **Wall Generator**: Arachne
 - **Thick External / Internal Bridges**: YES
-- **Brim**: No Brim
-- **Recommended Filament**: PLA
+- **Brim**: Auto
+- **Support**: None
 
 Please use the following part orientation for the best results:
 
@@ -75,7 +78,11 @@ The source [Fusion 360 project export][Fusion360 Project] already includes this 
 
 ### Printing
 
-In order to print this mod properly, you will need to enable Tree Supports and add support enforcers inside the BTU sockets. These have already been configured in the `Top (BTU Mod)` plate of the [`lt6c-case.3mf`](./lt6c-case.3mf) project file.
+You shouldn't need any special settings or precaution while printing this mod, just following the [Print Profile](#print-profile) should be enough.
+
+A pre-configured `Top (BTU Mod)` plate has also been included in the main [`lt6c-case.3mf`](./lt6c-case.3mf) project file.
+
+If you encounter some issues with the BTU sockets not coming out clean, you may want to enable **Automatic Tree Supports** on **Build Plate Only** it shouldn't be necessary.
 
 ### Assembly
 
