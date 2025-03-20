@@ -62,9 +62,9 @@ A complete build guide of the LT6C is also available at [LambdaKB.dev](https://l
 
 A modified version of the top part of the case that accepts 7.5 mm ball transfer unit (built around [MJ310 BTUs][MJ310 BTU]) is also available.
 
-<p align="center">
-    <a href="../assets/case-btu-mod.png"><img src="../assets/case-btu-mod.png" width=480 alt="Case 3D Render"></a>
-</p>
+|                                           |                                    |                                      |
+| :---------------------------------------: | :--------------------------------: | :----------------------------------: |
+| ![Render](../assets/case-btu-preview.png) | ![Top](../assets/case-btu-top.png) | ![Side](../assets/case-btu-side.png) |
 
 The source [Fusion 360 project export][Fusion360 Project] already includes this mod as part of its timeline, dedicated [STL][BTU STL File] & [STEP][BTU STEP File] are also available.
 
@@ -73,6 +73,7 @@ The source [Fusion 360 project export][Fusion360 Project] already includes this 
 In order to print this mod properly, you will need to enable Tree Supports and add support enforcers inside the BTU sockets. These have already been configured in the `Top (BTU Mod)` plate of the [`lt6c-case.3mf`](./lt6c-case.3mf) project file.
 
 ### Assembly
+
 If you choose to use this mod, you will need **3 × [7.5 mm BTUs][MJ310 BTU]** and should ignore the Roller Bearings, Bearing Press and Dowels from the original BOM.
 
 Assembly is pretty similar to the original case, once you need to install the bearing, just press fit the BTUs inside the designated sockets instead.
