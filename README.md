@@ -89,7 +89,24 @@ Feel free to modify the case to your liking, but please make sure to respect the
 
 ## Firmware
 
-Firmware has been built using the [`vial` fork](https://github.com/vial-kb/vial-qmk) of [QMK](https://qmk.fm).
+Firmware has been built using the [`vial` fork](https://github.com/vial-kb/vial-qmk) of [QMK](https://qmk.fm). Sources are available in our own [lambdakb/vial-qmk](hhttps://github.com/lambdakb/vial-qmk/tree/lambdakb/keyboards/lambdakb/lt6c) repository and are built using the [QMK CLI](https://docs.qmk.fm/cli).
+
+|                                                        Layout                                                         |
+| :-------------------------------------------------------------------------------------------------------------------: |
+| <a href="assets/firmware-vial-layout.png"><img src="assets/firmware-vial-layout.png" width=400 alt="Vial Layout"></a> |
+
+Checkout the [latest release](https://github.com/lambdakb/trackball-lt6c/releases/latest) to download the latest firmware.
+
+To flash the firmware to your trackball, follow the following steps:
+
+- Put the XIAO RP2040 in Bootloader mode by holding the BOOT button while plugging the USB cable (see [official guide](https://wiki.seeedstudio.com/XIAO-RP2040/#enter-bootloader-mode) if you need help).
+- Mount the `RPI-RP2` drive on your computer.
+- Copy or drag and drop the `lambdakb_lt6c_vial.uf2` file to the `RPI-RP2` drive.
+- The trackball should now reboot, and the firmware should be flashed.
+- Open the [Vial Desktop Application](https://config.vial.today/) or [Vial Web App](https://vial.rocks/app/) to configure the trackball.
+
+> [!NOTE]
+> To allow the firmware to be updated without requiring disassembly, you can enter Bootloader mode by holding the bottom left key of the trackball and plugging the USB cable. This is only possible after the firmware has been flashed the first time.
 
 ## Attribution
 
