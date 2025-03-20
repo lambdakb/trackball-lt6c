@@ -45,65 +45,40 @@ The exported schematic is also available under [`output/schematics`](output/sche
 [^pcb-color]: You can select any PCB color you want but manufacturers such as JLCPCB will charge you more for it as the combo 0.8 mm thickness, Lead Free HASL surface finish and alternative board color is pretty uncommon for them to produce.
 [^surface-finish]: The "HASL (with lead)" option is extremely discouraged due to the risk of lead poisoning. We strongly recommend paying the premium for the "Lead Free HASL" option.
 
-### JLCPCB Specific Options
-
-<!-- NOTE: This is generic and used for ALL LambdaKB PCBs EXCEPT for cases PCB   -->
-
-#### Mark on PCB
-
-The following JCLPCB specific options are used to serialize PCBs on order. An 8 × 8 mm silkscreen square was added to the PCB to allow for a 2D barcode to be added.
-
-| Parameters            | Value                       |
-| --------------------- | --------------------------- |
-| Mark on PCB           | 2D barcode (Serial Number)  |
-| - Printing            | 2D barcode & Number         |
-| - Code Type           | Data Matrix Code            |
-| - Prefix              | `LKBD_LT6C_v100`            |
-| - Unique Number       | Remove                      |
-| - Incrementing Number | _`YYMM01`_ (e.g.: `250300`) |
-| - 2D Barcode Size     | 8 × 8 mm                    |
-| - 2D Barcode Position | Specify Position            |
-
-Serial numbers are based on the current date using the `YYMM01` format for its incrementing numbers. Orders in February 2025 would start then start it at `250300`, making the final serial `LKBD_LT6C_v100_250300`.
-
 ## Case
 
-|     3D Render     |     Part Orientation     |
-| :---------------: | :----------------------: |
-| ![Case 3D Render] | ![Case Part Orientation] |
+|                                                3D Render                                                 |
+| :------------------------------------------------------------------------------------------------------: |
+| <a href="assets/case-preview.png"><img src="assets/case-preview.png" width=400 alt="Case 3D Render"></a> |
 
-[Case 3D Render]: assets/case-preview.png
-[Case Part Orientation]: assets/case-part-orientation.png
+A 3D printed case is available under [`case`](case/), this is a simple modification of the original [Ploopy Adept's case](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals) that adds clearance for the back of our PCB. No other major modification has been done it.
 
-A 3D printed case is also available under [`case`](case/), this is a simple modification of the original [Ploopy Adept's case](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals) that adds clearance for the back of our PCB. No other major modification has been done to it.
+This includes:
 
-Please refer to the original [printing instructions](https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals#how-can-i-use-the-included-3mf-file) and use the included [`3mf` file](case/lt6c-case.3mf) to print it.
+- A pre-cconfigured [`3mf` file](case/lt6c-case.3mf) for Orca Slicer
+- Printing instructions
+- Individual STL files, STEP file, and the original Fusion 360 project archive
 
-Individual STL files, STEP file, and Fusion 360 project archive are also available if you wish to modify it. Please make sure to respect the original [license](./README.md#license) when doing so.
+Feel free to modify the case to your liking, but please make sure to respect the original [license](./README.md#license) when doing so.
 
 ## BOM
 
-| Part                          | Ref.                                            | Quantity | Optional | Remarks                                                                              |
-| ----------------------------- | ----------------------------------------------- | :------: | :------: | ------------------------------------------------------------------------------------ |
-| PCB                           | [LT6C PCB](./README.md#pcb)                     |    1     |    ❌    | See [PCB](./README.md#pcb) section on how to order it.                               |
-| 3D Printed Case               | [LT6C Case](./README.md#case)                   |    1     |    ❌    | 3D Printed case adapted from the [Adept Trackball case].                             |
-| Case Screws                   | [M2 × 4 mm Low Profile Socket Head Screw (Hex)] |    4     |    ❌    | Low profile hex head screws are recommended, but any head type should work.          |
-| Roller Bearings               | [MR63ZZ 3 × 6 × 2.5 mm Bearing]                 |    3     |    ❌    | Sliding surface between the case and the trackball itself.                           |
-| Anti-Slip Feet                | Any                                             |    4     |    ✅    | Recommended for stability, any silicone or cork adhesive anti-slip feet should work. |
-| 44 mm Trackball               | Any [1.75" Snooker Ball]                        |    1     |    ❌    | The trackball ball itself, any 1.75" snooker / billiard ball should work.            |
-| XIAO RP2040 Controller        | [SeeedStudio XIAO RP2040]                       |    1     |    ❌    | Main controller for QMK/Vial.                                                        |
-| Micro Switches                | [D2LS-21 SMD Micro Switch]                      |    6     |    ❌    | Micro switches for mouse buttons.                                                    |
-| PMW3360 Optical Sensor & Lens | [PMW3360DM-T2QU + LM19-LSI]                     |    1     |    ❌    | Optical mouse sensor and lens used to detect trackball movement.                     |
-| 1.8V DO                       | [TPS76318 Fixed 1.8V LDO (SOT-23-5)]            |    1     |    ❌    | Power regulator for optical sensor.                                                  |
-| 1uF Capacitor                 | [0805 SMD Ceramic Capacitor]                    |    1     |    ❌    | Required by the optical sensor LDO.                                                  |
-| 4.7uF Capacitors              | [0805 SMD Ceramic Capacitor]                    |    2     |    ❌    | Power filtering capacitor for optical sensor and required LDO.                       |
-| 100nF Capacitors              | [0805 SMD Ceramic Capacitor]                    |    1     |    ❌    | Power filtering for the optical sensor.                                              |
-| 10K Ω Resistor                | [0805 SMD Resistor]                             |    1     |    ❌    | Required by the optical sensor.                                                      |
-| 39 Ω Resistor                 | [0805 SMD Resistor]                             |    1     |    ❌    | Required by the optical sensor.                                                      |
+| Part                          | Ref.                                 | Quantity | Remarks                                                                                                                                         |
+| ----------------------------- | ------------------------------------ | :------: | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| PCB                           | [LT6C PCB](./README.md#pcb)          |    1     | See [PCB](./README.md#pcb) section on how to order it.                                                                                          |
+| 3D Printed Case               | [LT6C Case](./case/README.md)        |    1     | 3D Printed case adapted from the [Adept Trackball case]. Make sure to check its individual [BOM](case/README.md#bom) for the required hardware. |
+| 44 mm Trackball               | Any [1.75" Snooker Ball]             |    1     | The trackball ball itself, any 1.75" snooker / billiard ball should work.                                                                       |
+| XIAO RP2040 Controller        | [SeeedStudio XIAO RP2040]            |    1     | Main controller for QMK/Vial.                                                                                                                   |
+| Micro Switches                | [D2LS-21 SMD Micro Switch]           |    6     | Micro switches for mouse buttons.                                                                                                               |
+| PMW3360 Optical Sensor & Lens | [PMW3360DM-T2QU + LM19-LSI]          |    1     | Optical mouse sensor and lens used to detect trackball movement.                                                                                |
+| 1.8V DO                       | [TPS76318 Fixed 1.8V LDO (SOT-23-5)] |    1     | Power regulator for optical sensor.                                                                                                             |
+| 1uF Capacitor                 | [0805 SMD Ceramic Capacitor]         |    1     | Required by the optical sensor LDO.                                                                                                             |
+| 4.7uF Capacitors              | [0805 SMD Ceramic Capacitor]         |    2     | Power filtering capacitor for optical sensor and required LDO.                                                                                  |
+| 100nF Capacitors              | [0805 SMD Ceramic Capacitor]         |    1     | Power filtering for the optical sensor.                                                                                                         |
+| 10K Ω Resistor                | [0805 SMD Resistor]                  |    1     | Required by the optical sensor.                                                                                                                 |
+| 39 Ω Resistor                 | [0805 SMD Resistor]                  |    1     | Required by the optical sensor.                                                                                                                 |
 
 [Adept Trackball case]: https://github.com/ploopyco/adept-trackball/tree/master/hardware/mechanicals
-[M2 × 4 mm Low Profile Socket Head Screw (Hex)]: https://www.aliexpress.com/item/4001072025844.html
-[MR63ZZ 3 × 6 × 2.5 mm Bearing]: https://www.aliexpress.com/item/1005001864936060.html
 [1.75" Snooker Ball]: https://amzn.eu/d/hGChcvq
 [SeeedStudio XIAO RP2040]: https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html
 [D2LS-21 SMD Micro Switch]: https://www.aliexpress.com/item/1005003435671261.html
