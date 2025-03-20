@@ -89,13 +89,22 @@ Feel free to modify the case to your liking, but please make sure to respect the
 
 ## Firmware
 
-Firmware has been built using the [`vial` fork](https://github.com/vial-kb/vial-qmk) of [QMK](https://qmk.fm). Sources are available in our own [lambdakb/vial-qmk](hhttps://github.com/lambdakb/vial-qmk/tree/lambdakb/keyboards/lambdakb/lt6c) repository and are built using the [QMK CLI](https://docs.qmk.fm/cli).
+Firmware has been built using [Vial](https://get.vial.today/), a fork of [QMK](https://qmk.fm) allowing configuration through a nice GUI.
 
 |                                                        Layout                                                         |
 | :-------------------------------------------------------------------------------------------------------------------: |
 | <a href="assets/firmware-vial-layout.png"><img src="assets/firmware-vial-layout.png" width=400 alt="Vial Layout"></a> |
 
-Checkout the [latest release](https://github.com/lambdakb/trackball-lt6c/releases/latest) to download the latest firmware.
+Sources are available in our own [`lambdakb/vial-qmk`](hhttps://github.com/lambdakb/vial-qmk/tree/lambdakb/keyboards/lambdakb/lt6c) repository and can be built using the [QMK CLI](https://docs.qmk.fm/cli).
+
+```sh
+# Clone the repository
+git clone --recursive https://github.com/lambdakb/vial-qmk.git
+# Compile the firmware
+cd vial-qmk
+qmk compile -kb lambdakb/lt6c -km vial
+# Shoudl generate a `lambdakb_lt6c_vial.uf2` file at the root of the repository.
+```
 
 To flash the firmware to your trackball, follow the following steps:
 
