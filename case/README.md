@@ -48,13 +48,13 @@ The included [`lt6c-case.3mf`](./lt6c-case.3mf) file has been built using Orca S
 - **Brim**: No Brim
 - **Recommended Filament**: PLA
 
-Please follow the following print orientation for the best results:
+Please use the following part orientation for the best results:
 
 ![Print Orientation](../assets/case-print-orientation.png)
 
 ## Assembly Guide
 
-Once you have your [PCB](/README.md#pcb) ready and your parts printed, you can start assembling the case. You should be able to follow the [Ploopy Adept Assembly Guide](https://github.com/ploopyco/adept-trackball/wiki/Ploopy-Adept-Trackball-Kit-Assembly#step-6-attach-the-optic-to-the-pmw-3360) starting from step 6.
+Once you have your [PCB](/README.md#pcb) ready and your parts printed, you can start assembling the case. You should be able to follow the [Ploopy Adept Assembly Guide](https://github.com/ploopyco/adept-trackball/wiki/Ploopy-Adept-Trackball-Kit-Assembly) starting from **Step 6**.
 
 A complete build guide of the LT6C is also available at [LambdaKB.dev](https://lambdakb.dev/devices/lt6c/build).
 
@@ -62,19 +62,22 @@ A complete build guide of the LT6C is also available at [LambdaKB.dev](https://l
 
 A modified version of the top part of the case that accepts 7.5 mm ball transfer unit (built around [MJ310 BTUs][MJ310 BTU]) is also available.
 
-<a href="../assets/case-btu-mod.png"><img src="../assets/case-btu-mod.png" width=400 alt="Case 3D Render"></a>
+<p align="center">
+    <a href="../assets/case-btu-mod.png"><img src="../assets/case-btu-mod.png" width=480 alt="Case 3D Render"></a>
+</p>
 
-You can download its specific files here: [STL][BTU STL File] & [STEP][BTU STEP File].
+The source [Fusion 360 project export][Fusion360 Project] already includes this mod as part of its timeline, dedicated [STL][BTU STL File] & [STEP][BTU STEP File] are also available.
 
 ### Printing
 
 In order to print this mod properly, you will need to enable Tree Supports and add support enforcers inside the BTU sockets. These have already been configured in the `Top (BTU Mod)` plate of the [`lt6c-case.3mf`](./lt6c-case.3mf) project file.
 
 ### Assembly
-If you choose to use this mod, you will need 3 × [7.5 mm BTUs][MJ310 BTU], you can also ignore the Roller Bearings, Bearing Press and Dowels from the original BOM.
+If you choose to use this mod, you will need **3 × [7.5 mm BTUs][MJ310 BTU]** and should ignore the Roller Bearings, Bearing Press and Dowels from the original BOM.
 
 Assembly is pretty similar to the original case, once you need to install the bearing, just press fit the BTUs inside the designated sockets instead.
 
 [MJ310 BTU]: https://www.aliexpress.com/item/1005005334424631.html
+[Fusion360 Project]: ./src/LT6C%20Case%20v20%20(BTU%20Mod).step
 [BTU STL File]: ./stl/lt6c-case-top-btu-mod.stl
 [BTU STEP File]: ./step/LT6C%20Case%20v20%20(BTU%20Mod).step
