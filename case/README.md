@@ -52,8 +52,8 @@ Otherwise, you can use the following settings:
 - **Infill Overlap**: 25%
 - **Seam Position**: Nearest
 - **Wall Generator**: Arachne
-- **Thick External / Internal Bridges**: YES
-- **Brim**: Auto
+- **Thick External / Internal Bridges**: Yes
+- **Brim**: No-brim (can be set to "Outer brim only" if your filament as a tendency to warp)
 - **Support**: None
 
 Please use the following part orientation for the best results:
