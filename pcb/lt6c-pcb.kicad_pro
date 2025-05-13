@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|148249999|74427500|ee236ea6-d6ab-48d7-8066-94ba287410d8|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -108,6 +113,7 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "ignore",
+        "text_on_edge_cuts": "error",
         "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
