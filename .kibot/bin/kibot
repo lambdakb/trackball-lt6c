@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eo pipefail
-image=ghcr.io/inti-cmnb/kicad9_auto:1.8.3
+image=ghcr.io/inti-cmnb/kicad9_auto:1.8.4
 workdir=$(git rev-parse --show-toplevel)
 
 # Two optional arguments, first is the command to run, the second the image name

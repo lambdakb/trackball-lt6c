@@ -2,7 +2,7 @@ NAME	:= LT6C
 GITROOT	:= $(shell git rev-parse --show-toplevel)
 KIBOT	:= $(GITROOT)/.kibot/bin/kibot
 
-default: pcb step
+default: export step
 
 test:
 	$(info + [$(NAME)] $@)
